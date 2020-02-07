@@ -7,7 +7,6 @@ class State():
     """
     인터페이스
     """
-
     def handle(self):
         raise NotImplementedError
 
@@ -32,7 +31,6 @@ class ProxyRedis(State):
     """
     def __init__(self, url):
         self.url = url
-
 
     def handle(self):
         if(self.url not in tmp_dict):
